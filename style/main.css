@@ -18,10 +18,18 @@ h1 {
   color: rgb(70, 65, 65);
 }
 
+side {
+  width: 25%;
+}
+
 main {
   justify-content: center;
   align-items: center;
-  width: 40vw;
+  width: 50%;
+}
+
+aside {
+  width: 25%;
 }
 
 label {
@@ -43,4 +51,12 @@ legend {
 input {
   background-color: aliceblue;
   margin: 5px;
+}
+
+#reset:hover {
+  background-color: rgb(206, 227, 245);
+}
+
+#send:hover {
+  background-color: rgb(206, 227, 245);
 }
