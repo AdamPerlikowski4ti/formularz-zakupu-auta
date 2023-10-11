@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formularz zakupu auta</title>
     <link rel="stylesheet" href="style/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
   </head>
   <body>
     <header><h1>Formularz zakupu samochodu</h1></header>
@@ -24,7 +27,6 @@
         </fieldset>
       <fieldset>
         <legend>Dane ogolne</legend>
-  
           <label for="brand"
             >marka:<input type="text" name="brand" id="brand" placeholder="np. BMW"
           /></label>
@@ -34,7 +36,15 @@
           <label for="gen"
             >generacja:<input type="text" name="generation" id="gen" placeholder="np. G30"
           /></label>
-    
+      </fieldset>
+      <fieldset>
+        <legend>Cena</legend>
+          <label for="price-from"
+            >od:<input type="number" name="cena-od" id="price-from" min="10000" max="500000"
+          />zł</label>
+          <label for="price-to"
+            >do:<input type="number" name="cena-do" id="price-to" min="10000" max="500000"
+          />zł</label>
       </fieldset>
       <fieldset>
         <legend>Rok produkcji</legend>
@@ -63,11 +73,18 @@
         >diesel<input type="checkbox" name="fuel" id="diesel"
       /></label>
       <label for="hybrid"
-      >hybrydowy<input type="checkbox" name="fuel" id="hybrid"
-    /></label>
-    <label for="electric"
-    >elektryczny<input type="checkbox" name="fuel" id="electric"
-  /></label>
+        >hybrydowy<input type="checkbox" name="fuel" id="hybrid"
+      /></label>
+      <label for="electric"
+        >elektryczny<input type="checkbox" name="fuel" id="electric"
+      /></label>
+      <label for="slider_from"
+        >min. pojemność silnika (cm3): <input type="range" id="slider_from" name="minCC" min="1000" max="6000" step="500" oninput="result.value=minCC.value"/>          
+        <output name="result" for="minCC"></output></label>
+      <label for="slider_to"
+      >maks. pojemność silnika (cm3): <input type="range" id="slider_to" name="maxCC" min="1000" max="6000" step="500" oninput="resultMax.value=maxCC.value"/>          
+      <output name="resultMax" for="maxCC"></output>
+    </label>
      </fieldset>
       <fieldset>
         <legend>Kolor pojazdu</legend>
@@ -96,8 +113,29 @@
          >brązowa<input type="checkbox" name="interior" id="brown-interior" 
         /></label>
       </fieldset>
-
-        
+      <fieldset>
+        <legend>Kraj pochodzenia pojazdu</legend>
+         <label for="country"
+            ><select name="pochodzenie" id="country">
+              <option value="">--Please choose an option--</option>
+              <option id="option-pl" value="pl">Polska</option>
+              <option id="option-de" value="de">Niemcy</option>
+              <option id="option-ch" value="ch">Szwajcaria</option>
+              <option id="option-uk" value="uk">Wielka Brytania</option>
+              <option id="option-fr" value="fr">Francja</option>
+              <option id="option-it" value="it">Włochy</option>
+              <option id="option-be" value="be">Belgia</option>
+              <option id="option-nl" value="nl">Holandia</option>
+              </select>
+         </label>
+      </fieldset>
+      <fieldset>
+        <legend>Komentarz / uwagi</legend>
+        <label for="com">
+          <textarea id="com" name="komentarz" rows="7" cols="50">
+          </textarea>
+        </label>
+      </fieldset>  
     </main>
   </body>
 </html>
