@@ -7,34 +7,97 @@
     <link rel="stylesheet" href="style/main.css" />
   </head>
   <body>
-    <form action="#">
+    <header><h1>Formularz zakupu samochodu</h1></header>
+    <main>
+      <form action="#">
+        <fieldset>
+          <legend>Dane użytkownika</legend>
+            <label for="username"
+              >Nazwa użytkownika:<input type="text" name="username" id="username"
+            /></label>
+            <label for="pass"
+              >haslo:<input type="password" name="password" id="pass" 
+            /></label>
+            <label for="mail"
+              >e-mail:<input type="email" name="email" id="mail"
+            /></label>  
+        </fieldset>
       <fieldset>
-        <legend>Dane użytkownika</legend>
+        <legend>Dane ogolne</legend>
   
-          <label for="username"
-            >Nazwa użytkownika:<input type="text" name="username" id="username"
+          <label for="brand"
+            >marka:<input type="text" name="brand" id="brand" placeholder="np. BMW"
           /></label>
-          <label for="pass"
-            >haslo:<input type="password" name="password" id="pass" 
+          <label for="model"
+            >model:<input type="text" name="model" id="model" placeholder="np. Seria 5"
           /></label>
-          <label for="mail"
-            >e-mail:<input type="email" name="email" id="mail"
+          <label for="gen"
+            >generacja:<input type="text" name="generation" id="gen" placeholder="np. G30"
           /></label>
     
       </fieldset>
-    <fieldset>
-      <legend>Dane ogolne</legend>
+      <fieldset>
+        <legend>Rok produkcji</legend>
+          <label for="age-from"
+            >od:<input type="number" name="rok-od" id="age-from" min="1990" max="2023"
+          /></label>
+          <label for="age-to"
+            >do:<input type="number" name="rok-do" id="age-to" min="1990" max="2023"
+          /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Skrzynia biegów</legend>
+         <label for="manual"
+           >manualna<input type="radio" name="gearbox" id="manual"
+         /></label>
+         <label for="auto"
+           >automatyczna<input type="radio" name="gearbox" id="auto"
+         /></label>
+      </fieldset>
+      <fieldset>
+      <legend>Silnik</legend>
+      <label for="petrol"
+        >benzyna<input type="checkbox" name="fuel" id="petrol"
+      /></label>
+      <label for="diesel"
+        >diesel<input type="checkbox" name="fuel" id="diesel"
+      /></label>
+      <label for="hybrid"
+      >hybrydowy<input type="checkbox" name="fuel" id="hybrid"
+    /></label>
+    <label for="electric"
+    >elektryczny<input type="checkbox" name="fuel" id="electric"
+  /></label>
+     </fieldset>
+      <fieldset>
+        <legend>Kolor pojazdu</legend>
+         <label for="color"
+           >lakier<input type="color" name="color" id="color"
+         /></label>
+        </fieldset>
+      <fieldset>
+       <legend>Kolor tapicerki</legend>
+        <label for="beige-interior"
+         >beżowa<input type="checkbox" name="interior" id="beige-interior" 
+        /></label>
+        <label for="black-interior"
+         >czarna<input type="checkbox" name="interior" id="black-interior" 
+        /></label>
+        <label for="red-interior"
+        >czerwona<input type="checkbox" name="interior" id="red-interior" 
+        /></label>
+        <label for="white-interior"
+         >biala<input type="checkbox" name="interior" id="white-interior" 
+        /></label>
+        <label for="grey-interior"
+         >szara<input type="checkbox" name="interior" id="grey-interior" 
+        /></label>
+        <label for="brown-interior"
+         >brązowa<input type="checkbox" name="interior" id="brown-interior" 
+        /></label>
+      </fieldset>
 
-        <label for="brand"
-          >marka:<input type="text" name="brand" id="brand" placeholder="np. BMW"
-        /></label>
-        <label for="model"
-          >model:<input type="text" name="model" id="model" placeholder="np. Seria 5"
-        /></label>
-        <label for="gen"
-          >generacja:<input type="text" name="generation" id="gen" placeholder="np. G30"
-        /></label>
-  
-    </fieldset>
+        
+    </main>
   </body>
 </html>

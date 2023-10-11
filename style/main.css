@@ -1,5 +1,22 @@
 body {
   background-color: aliceblue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0px;
+}
+
+header {
+  background-color: lightblue;
+  height: 10%;
+  width: 100%;
+  text-align: center;
+}
+
+main {
+  justify-content: center;
+  align-items: center;
+  width: 60%;
 }
 
 label {
