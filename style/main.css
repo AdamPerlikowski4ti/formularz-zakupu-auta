@@ -1,5 +1,7 @@
 body {
-  background-color: aliceblue;
+  background-image: url(https://images.unsplash.com/photo-1484856299450-fb14549bca50?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1996&q=80);
+  background-position: center;
+  background-size: cover;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -7,15 +9,53 @@ body {
 }
 
 header {
-  background-color: lightblue;
+  background-color: #F0F0F2;
   height: 10%;
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.title {
+  width: 60%;
+  height: 100%;
+}
+
+.menu {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
   text-align: center;
 }
 
+.menu-1, .menu-2, .menu-3 {
+  width: 20%;
+}
+
+.menu-1:hover, .menu-2:hover, .menu-3:hover {
+  cursor: pointer;
+}
+
+
+
 h1 {
   font-family: "Lato", sans-serif;
-  color: rgb(70, 65, 65);
+  color: #565759;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  color: #565759;
+}
+
+.p:hover {
+  color: #9BABBF;
 }
 
 side {
@@ -26,6 +66,9 @@ main {
   justify-content: center;
   align-items: center;
   width: 50%;
+  background-color: #F0F0F2;
+  opacity: 0.9;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 aside {
@@ -49,14 +92,23 @@ legend {
 }
 
 input {
-  background-color: aliceblue;
+  background-color: #F0F0F2;
+  color: #565759;
+  margin: 5px;
+}
+
+textarea {
+  background-color: #F0F0F2;
+  color: #565759;
   margin: 5px;
 }
 
 #reset:hover {
   background-color: rgb(206, 227, 245);
+  cursor: pointer;
 }
 
 #send:hover {
   background-color: rgb(206, 227, 245);
+  cursor: pointer;
 }
