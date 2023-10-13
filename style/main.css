@@ -42,8 +42,6 @@ header {
   cursor: pointer;
 }
 
-
-
 h1 {
   font-family: "Lato", sans-serif;
   color: #565759;
@@ -52,10 +50,6 @@ h1 {
 p {
   font-family: 'Poppins', sans-serif;
   color: #565759;
-}
-
-.p:hover {
-  color: #9BABBF;
 }
 
 side {
